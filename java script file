@@ -1,0 +1,103 @@
+function format(command){
+
+    document.execCommand(command,false,null);
+
+}
+
+function heading(value){
+
+    if(value=="Normal")
+        document.execCommand("formatBlock",false,"P");
+
+    else
+        document.execCommand("formatBlock",false,value);
+
+}
+
+function resume(){
+
+document.getElementById("editor").innerHTML=`
+
+<h1>John Smith</h1>
+
+<h3>Software Engineer</h3>
+
+<hr>
+
+<h2>Education</h2>
+
+<p>B.Tech Computer Engineering</p>
+
+<h2>Skills</h2>
+
+<ul>
+
+<li>HTML</li>
+
+<li>CSS</li>
+
+<li>JavaScript</li>
+
+</ul>
+
+`;
+
+}
+
+function invoice(){
+
+document.getElementById("editor").innerHTML=`
+
+<h1>Invoice</h1>
+
+<hr>
+
+<p><b>Invoice No:</b> 1001</p>
+
+<p><b>Customer:</b> ABC Company</p>
+
+<table border='1' width='100%'>
+
+<tr>
+
+<th>Item</th>
+
+<th>Qty</th>
+
+<th>Price</th>
+
+</tr>
+
+<tr>
+
+<td>Mouse</td>
+
+<td>2</td>
+
+<td>500</td>
+
+</tr>
+
+</table>
+
+`;
+
+}
+
+function report(){
+
+document.getElementById("editor").innerHTML=`
+
+<h1>Project Report</h1>
+
+<h2>Introduction</h2>
+
+<p>Write here...</p>
+
+<h2>Conclusion</h2>
+
+<p>Write conclusion...</p>
+
+`;
+
+}

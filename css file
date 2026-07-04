@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    background:#ececec;
+    font-family:Arial;
+}
+
+.toolbar{
+
+    background:#1f0abf;
+
+    padding:10px;
+
+}
+
+.toolbar button{
+
+    padding:8px;
+
+    margin-right:5px;
+
+}
+
+.toolbar select{
+
+    padding:8px;
+
+}
+
+.container{
+
+    display:flex;
+
+}
+
+.sidebar{
+
+    width:200px;
+
+    background:white;
+
+    padding:20px;
+
+    height:100vh;
+
+}
+
+.sidebar button{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:10px;
+
+}
+
+.page{
+
+    width:800px;
+
+    min-height:1100px;
+
+    background:white;
+
+    margin:30px auto;
+
+    box-shadow:0 0 10px gray;
+
+    padding:50px;
+
+}
+
+#editor{
+
+    min-height:1000px;
+
+    outline:none;
+
+}
